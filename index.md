@@ -4,6 +4,7 @@ You can use the [editor on GitHub](https://github.com/minhhuynh1812/bootstrap/ed
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
+<link rel="stylesheet" href="https://raw.githubusercontent.com/minhhuynh1812/website/gh-pages/bootstrap.css">
 
 <div>
 	<!-- Standard button -->
