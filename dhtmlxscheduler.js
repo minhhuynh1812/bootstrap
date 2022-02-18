@@ -4493,29 +4493,6 @@ This software is covered by DHTMLX Evaluation License. Contact sales@dhtmlx.com 
                 }, o(1 * e, 2 * e))
             }
         }, 1)
-    }), window.scheduler = Scheduler.getSchedulerInstance(), Scheduler.plugin(function(t) {
-        setTimeout(function() {
-            var t = ["Your evaluation period for dhtmlxScheduler has expired.", "Please contact us at <a href='mailto:contact@dhtmlx.com?subject=dhtmlxScheduler licensing' target='_blank'>contact@dhtmlx.com</a> or visit", "<a href='https://dhtmlx.com/docs/products/dhtmlxScheduler' target='_blank'>dhtmlx.com</a> in order to obtain a license."].join("<br>"),
-                e = 6e4,
-                i = 60 * e,
-                n = 24 * i,
-                a = 60 * n;
-            if ("undefined" != typeof 1640155525000) {
-                var r = function() {
-                        return Date.now() - 1640155525000 > a
-                    },
-                    s = function(t, e) {
-                        return Math.floor(Math.random() * (e - t + 1)) + t
-                    };
-                setInterval(function() {
-                    r() && dhtmlx.message({
-                        type: "error",
-                        text: t,
-                        expire: -1
-                    })
-                }, s(1.5 * e, 3 * e))
-            }
-        }, 1)
     }), dhtmlx && dhtmlx.attaches && (dhtmlx.attaches.attachScheduler = function(t, e, i, n) {
         var i = i || '<div class="dhx_cal_tab" name="day_tab" style="right:204px;"></div><div class="dhx_cal_tab" name="week_tab" style="right:140px;"></div><div class="dhx_cal_tab" name="month_tab" style="right:76px;"></div>',
             a = document.createElement("DIV");
