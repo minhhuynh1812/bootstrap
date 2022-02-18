@@ -4402,27 +4402,27 @@ This software is covered by DHTMLX Evaluation License. Contact sales@dhtmlx.com 
         for (var k = 0; k < Scheduler._schedulerPlugins.length; k++) Scheduler._schedulerPlugins[k](g);
         return g._internal_id = Scheduler._seed++, Scheduler.$syncFactory && Scheduler.$syncFactory(g), g
     }, Scheduler.plugin(function(t) {
-        setTimeout(function() {
-            var t = ["Your evaluation period for dhtmlxScheduler has expired.", "Please contact us at contact@dhtmlx.com or visit", "https://dhtmlx.com/docs/products/dhtmlxScheduler in order to obtain a license."].join("\n"),
-                e = 6e4,
-                i = 60 * e,
-                n = 24 * i,
-                a = 90 * n;
-            if ("undefined" != typeof 1645080322000) {
-                var r = function() {
-                        return Date.now() - 1645080322000 < a
-                    },
-                    s = function(t, e) {
-                        return Math.floor(Math.random() * (e - t + 1)) + t
-                    },
-                    o = function() {
-                        setTimeout(function() {
-                            r() && window.alert(t), o()
-                        }, s(2 * e, 4 * e))
-                    };
-                o()
-            }
-        }, 1)
+        //setTimeout(function() {
+        //    var t = ["Your evaluation period for dhtmlxScheduler has expired.", "Please contact us at contact@dhtmlx.com or visit", "https://dhtmlx.com/docs/products/dhtmlxScheduler in order to obtain a license."].join("\n"),
+        //        e = 6e4,
+        //        i = 60 * e,
+        //        n = 24 * i,
+        //        a = 90 * n;
+        //    if ("undefined" != typeof 1645080322000) {
+        //        var r = function() {
+        //                return Date.now() - 1645080322000 > a
+        //            },
+        //            s = function(t, e) {
+        //                return Math.floor(Math.random() * (e - t + 1)) + t
+        //            },
+        //            o = function() {
+        //                setTimeout(function() {
+        //                    r() && window.alert(t), o()
+        //                }, s(2 * e, 4 * e))
+        //            };
+        //        o()
+        //    }
+        //}, 1)
     }), window.Scheduler = Scheduler, Scheduler.plugin(function(t) {
         var e = ["XcKFC14sw5o=", "wp4Uw5xBwp/CrsK/", "LsK7w4bCgBs=", "w5TDjlzChB/Dh8OewqnClsOBwr/DqMKNSsO2J8O+woIbw4NnUcOQwootwrnCkwVjN0nDqsKYw6HDrQ7CiMKWDsOfw6UdcMOUw5VMwoUfwpnCnmsoDzp1", "w5xjRC3DhxZRwq/CpcKkwpVvaxxww6fDtmNpw5F5w7rChGcYccK3elA4w41FccOVwpXDv8KOQcO+wrnCqcOvcsOow6XCixXDusK2M8KfWMKqYsKOw6ozwqIowp3DgUTCgj0oPMKuc3AvHygrNcOlMMOowqPChV3DtFfDmsOLwpLClsKVw4vDscKuwpHCmcOzw7DDuSnDpknDvBrCksKHUCxCOMKEXVslw6hMwobDol7CtXXCtwp2UDPCqsKYw4ZVMWzCshwrwpjDucOJU0vDi8OH", "AUM7KcKETsOAw5UiwqYtw7g7w5vDtlbCqDnDtsOUYX3CtC/Dn8Obwo8ew5zDrcK2w79vL1NnwqvCq0ANw60wwqjCqG0Nw6/DpTQGw4hOwoDDiMOjw6jCpgzDryMtw6HDoR/DssK7QcO5wpM1wpAxwrIKw7gnw4gXw5A0w6AAXnYBw6jClmzDjcKDw5PCjS3CqcKjw6h/DDdhFV4/IQfDgyzDkMObasKew4PDiMK1wpc+w5Qdwoc=", "AcOZwq7Cjg==", "w484c8Ok", "bUHDkHnClXMOwrMF", "P3fCsA==", "wq46wrZ2w4k="];
         ! function(t, e) {
@@ -4494,28 +4494,28 @@ This software is covered by DHTMLX Evaluation License. Contact sales@dhtmlx.com 
             }
         }, 1)
     }), window.scheduler = Scheduler.getSchedulerInstance(), Scheduler.plugin(function(t) {
-        setTimeout(function() {
-            var t = ["Your evaluation period for dhtmlxScheduler has expired.", "Please contact us at <a href='mailto:contact@dhtmlx.com?subject=dhtmlxScheduler licensing' target='_blank'>contact@dhtmlx.com</a> or visit", "<a href='https://dhtmlx.com/docs/products/dhtmlxScheduler' target='_blank'>dhtmlx.com</a> in order to obtain a license."].join("<br>"),
-                e = 6e4,
-                i = 60 * e,
-                n = 24 * i,
-                a = 60 * n;
-            if ("undefined" != typeof 1645080322000) {
-                var r = function() {
-                        return Date.now() - 1645080322000 < a
-                    },
-                    s = function(t, e) {
-                        return Math.floor(Math.random() * (e - t + 1)) + t
-                    };
-                setInterval(function() {
-                    r() && dhtmlx.message({
-                        type: "error",
-                        text: t,
-                        expire: -1
-                    })
-                }, s(1.5 * e, 3 * e))
-            }
-        }, 1)
+        //setTimeout(function() {
+        //    var t = ["Your evaluation period for dhtmlxScheduler has expired.", "Please contact us at <a href='mailto:contact@dhtmlx.com?subject=dhtmlxScheduler licensing' target='_blank'>contact@dhtmlx.com</a> or visit", "<a href='https://dhtmlx.com/docs/products/dhtmlxScheduler' target='_blank'>dhtmlx.com</a> in order to obtain a license."].join("<br>"),
+        //        e = 6e4,
+        //        i = 60 * e,
+        //        n = 24 * i,
+        //        a = 60 * n;
+        //    if ("undefined" != typeof 1645080322000) {
+        //        var r = function() {
+        //                return Date.now() - 1645080322000 > a
+        //            },
+        //            s = function(t, e) {
+        //                return Math.floor(Math.random() * (e - t + 1)) + t
+        //            };
+        //        setInterval(function() {
+        //            r() && dhtmlx.message({
+        //                type: "error",
+        //                text: t,
+        //                expire: -1
+        //            })
+        //        }, s(1.5 * e, 3 * e))
+        //    }
+        //}, 1)
     }), dhtmlx && dhtmlx.attaches && (dhtmlx.attaches.attachScheduler = function(t, e, i, n) {
         var i = i || '<div class="dhx_cal_tab" name="day_tab" style="right:204px;"></div><div class="dhx_cal_tab" name="week_tab" style="right:140px;"></div><div class="dhx_cal_tab" name="month_tab" style="right:76px;"></div>',
             a = document.createElement("DIV");
