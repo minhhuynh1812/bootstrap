@@ -162,6 +162,16 @@ $.hmcustom.table.DateTimeConvertChart = function (date) {
     }
     return "";
 }
+$.hmcustom.table.DateTimeConvertSys = function (date) {
+    if (date != null) {
+        var getstringnumber = date.match(/[0-9]/g);
+        var startdate = Number(getstringnumber.join(""))
+        startdate = new Date(startdate);
+        var datestartformat = startdate.getFullYear() + "-" + ((startdate.getMonth() + 1) >= 10 ? (startdate.getMonth() + 1) : "0" + (startdate.getMonth() + 1)) + "-" + (startdate.getDate() >= 10 ? startdate.getDate() : "0" + startdate.getDate());
+        return datestartformat;
+    }
+    return "";
+}
 $.hmcustom.table.DateTimeConvertString = function (date) {
     if (date != null) {
         return ((Number(date.getMonth()) + 1) > 9 ? (Number(date.getMonth()) + 1) : ("0" + (Number(date.getMonth()) + 1))) + "/" + (date.getDate() > 9 ? date.getDate() : ("0" + date.getDate())) + "/" + date.getFullYear();
