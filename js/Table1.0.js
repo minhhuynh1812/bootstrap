@@ -184,6 +184,26 @@ $.hmcustom.table.DateTimeConvertSys = function (date, type) {
     }
     return "";
 }
+$.hmcustom.table.DateTimeConvertSysDate = function (date, type) {
+    if (date != null) {
+        startdate = date;
+        var format;
+        switch(type)
+        {
+            case "date":
+                format = startdate.getFullYear() + "-" + ((startdate.getMonth() + 1) >= 10 ? (startdate.getMonth() + 1) : "0" + (startdate.getMonth() + 1)) + "-" + (startdate.getDate() >= 10 ? startdate.getDate() : "0" + startdate.getDate());
+                break;
+            case "datetime":
+                format = startdate.getFullYear() + "-" + ((startdate.getMonth() + 1) >= 10 ? (startdate.getMonth() + 1) : "0" + (startdate.getMonth() + 1)) + "-" + (startdate.getDate() >= 10 ? startdate.getDate() : "0" + startdate.getDate()) + " " + (startdate.getHours() >= 10 ? startdate.getHours() : "0" + startdate.getHours()) + ":" + (startdate.getMinutes() >= 10 ? startdate.getMinutes() : "0" + startdate.getMinutes());
+                break;
+            case "time":
+                format = (startdate.getHours() >= 10 ? startdate.getHours() : "0" + startdate.getHours()) + ":" + (startdate.getMinutes() >= 10 ? startdate.getMinutes() : "0" + startdate.getMinutes()) + ":" + (startdate.getSeconds() >= 10 ? startdate.getSeconds() : "0" + startdate.getSeconds());
+                break;
+        }
+        return format;
+    }
+    return "";
+}
 $.hmcustom.table.DateTimeConvertString = function (date) {
     if (date != null) {
         return ((Number(date.getMonth()) + 1) > 9 ? (Number(date.getMonth()) + 1) : ("0" + (Number(date.getMonth()) + 1))) + "/" + (date.getDate() > 9 ? date.getDate() : ("0" + date.getDate())) + "/" + date.getFullYear();
