@@ -319,14 +319,15 @@ This software is covered by DHTMLX Evaluation License. Contact sales@dhtmlx.com 
             }
 
             function a(t) {
-                u.area || (u.area = document.createElement("div"), u.area.className = "dhtmlx_message_area", u.area.style[u.position] = "5px", document.body.appendChild(u.area)), u.hide(t.id);
+                /*u.area || (u.area = document.createElement("div"), u.area.className = "dhtmlx_message_area", u.area.style[u.position] = "5px", document.body.appendChild(u.area)), u.hide(t.id);
                 var e = document.createElement("div");
                 return e.innerHTML = "<div>" + t.text + "</div>", e.className = "dhtmlx-info dhtmlx-" + t.type, e.onclick = function() {
                         u.hide(t.id), t = null
                     }, scheduler._waiAria.messageInfoAttr(e), "bottom" == u.position && u.area.firstChild ? u.area.insertBefore(e, u.area.firstChild) : u.area.appendChild(e),
                     t.expire > 0 && (u.timers[t.id] = window.setTimeout(function() {
                         u.hide(t.id)
-                    }, t.expire)), u.pull[t.id] = e, e = null, t.id
+                    }, t.expire)), u.pull[t.id] = e, e = null, t.id*/
+                return "";
             }
 
             function r(e, i, a) {
