@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://minhhuynh1812.github.io/component/flipbook.min.css">
+		<script src="https://minhhuynh1812.github.io/component/jquery-3.6.3.js"></script>
+        <script src="https://minhhuynh1812.github.io/component/flipbook.min.js"></script>
+        <script type="text/javascript">
+            jQuery(document).ready(function () {
+                jQuery('#containerviewpage').flipBook({
+                    pdfUrl: 'https://1dd0d929-a418-4fd4-8eb2-346f54def4f1.usrfiles.com/ugd/1dd0d9_88a429cead2d4de4b6003e0d05b93ce9.pdf',
+					viewMode: '2d',
+					btnBookmark: {
+						enabled: false,
+					},
+					 btnShare: {
+						enabled: false,
+						hideOnMobile: true
+					},
+					btnToc: {
+						enabled: false,
+					},
+					  btnSelect: {
+						enabled: false,
+					},
+					
+					btnPrint: {
+						enabled: false,
+						hideOnMobile: true
+					},
+					btnDownloadPages: {
+						enabled: false,
+					},
+					btnThumbs: {
+						enabled: false,
+					},
+					btnAutoplay: {
+						enabled: false,
+					},
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="containerviewpage"></div>
+    </body>
+</html>
