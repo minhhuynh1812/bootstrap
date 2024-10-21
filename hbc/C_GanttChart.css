@@ -1,0 +1,156 @@
+﻿ html, body {
+            height: 100%;
+			padding: 0px;
+            padding-bottom:15px;
+			margin: 0px;
+            overflow-y:auto;
+            overflow-x:hidden
+        }     
+.weekend {
+    background: #f4f7f4 !important;
+}
+
+.marker_line {
+    background-color: #0ca30a;
+}
+
+.marker_Finish {
+    background-color: #ff0000;
+}
+
+.marker_MileStone {
+    background-color: #d33daf;
+}
+
+.marker_Project {
+    background-color: #0073b7;
+}
+
+.dhx_calendar_click {
+    background-color: #C2D5FC !important;
+}
+
+.gantt_task_cell.week_end {
+    background-color: #EFF5FD;
+}
+
+.gantt_task_row.gantt_selected .gantt_task_cell.week_end {
+    background-color: #F8EC9C;
+}
+
+.overdue-indicator {
+    width: 24px;
+    margin-top: 5px;
+    height: 24px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 17px;
+    color: white;
+    background: rgb(255, 60, 60);
+    line-height: 25px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.overdue-indicator-btn {
+    width: 18px;
+    height: 18px;
+    margin-top: 2px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 17px;
+    color: white;
+    background: rgb(255, 60, 60);
+    line-height: 19px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 10px;
+}
+
+.overdue-indicator-btn :hover {
+    color: rgb(179, 77, 77);
+}
+
+.deadline {
+    position: absolute;
+    border-radius: 12px;
+    border: 2px solid #585858;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 22px;
+    height: 22px;
+    margin-left: -11px;
+    margin-top: 6px;
+    z-index: 1;
+    background: url('../../../../Content/codebase/common/download-arrow.png') center no-repeat;
+}
+
+.baseline {
+    position: absolute;
+    border-radius: 2px;
+    opacity: 0.6;
+    margin-top: -7px;
+    height: 12px;
+    background: #ffd180;
+    border: 1px solid rgb(255, 153, 0);
+}
+
+/* move task lines upper */
+.gantt_task_line, .gantt_line_wrapper {
+    margin-top: -5px;
+}
+
+.gantt_task_link .gantt_link_arrow {
+    margin-top: -8px;
+}
+
+.gantt_side_content.gantt_right {
+    bottom: 0;
+}
+
+.slack {
+    position: absolute;
+    border-radius: 0;
+    opacity: 0.7;
+    border: none;
+    border-right: 1px solid #b6b6b6;
+    margin-left: -2px;
+    margin-top: 5px;
+    background: #b6b6b6;
+    background: repeating-linear-gradient( 45deg, #FFFFFF, #FFFFFF 5px, #b6b6b6 5px, #b6b6b6 10px );
+}
+
+.customtext {
+    color: black;
+    font-family: 'Times New Roman';
+    font-size: 12px;
+}
+
+.HighlightedWeekend {
+    background-color: #b6b6b6 !important;
+}
+
+.HighlightedEditHour {
+    text-decoration: underline;
+}
+
+.HighlightedException {
+    background-color: #a5eef6 !important;
+    text-decoration: underline;
+}
+
+.HighlightedNonWorking {
+    background-color: #faf8d9 !important;
+    text-decoration: underline;
+}
+.tr-state-highlight { background-color:#e6e7e8 }
+
+
+ .gantt_modal_box {
+     border-top: 3px solid #0073b7 !important
+ }
+ .gantt_cal_light{
+      border-top: 3px solid #0073b7 !important
+ }
+
+
